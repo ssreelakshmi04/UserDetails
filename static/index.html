@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My App</h1>
+    </header>
+    <main>
+        <section id="messageFormSection">
+            <h2>Submit Your Message</h2>
+            <form id="messageForm">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit Message</button>
+            </form>
+            <p id="formStatus"></p>
+        </section>
+        <section id="messagesSection">
+            <h2>Messages</h2>
+            <button type="button" id="viewMessagesBtn">View All Messages</button>
+            <div id="messagesContainer"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 My App. All rights reserved.</p>
+    </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/static/script.js"></script>
+</body>
+</html>

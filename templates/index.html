@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Simple Messaging App</title>
+    <link rel='stylesheet' href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Simple Message Board</h1>
+    </header>
+
+    <main>
+        <form id='messageForm'>
+            <div>
+                <label for='name'>Your Name:</label>
+                <input type='text' id='name' name='name' placeholder='Your Name' required>
+            </div>
+            <div>
+                <label for='message'>Your Message:</label>
+                <textarea id='message' name='message' placeholder='Your Message' rows='5' required></textarea>
+            </div>
+            <button type='submit' id='submitBtn'>Submit Message</button>
+        </form>
+
+        <button id='viewMessagesBtn'>View Messages</button>
+
+        <div id='messagesDisplay'></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Simple Messaging App</p>
+    </footer>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/static/script.js" defer></script>
+</body>
+</html>
