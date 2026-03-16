@@ -10,8 +10,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy project files
 COPY . .
 
-# Expose port
-EXPOSE 5000
-
-# Run with gunicorn for production
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "2", "app:app"]
+# NOTE: Render assigns a dynamic port via the $PORT env var.
+# We bind gunicorn to 0.0.0.0:$PORT so it works both locally and on Render.
+CMD gunicorn --bind 0.0.0.0:$PORT --workers 2 app:app
