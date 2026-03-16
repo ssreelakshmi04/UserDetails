@@ -20,7 +20,10 @@ A full-stack application built with Python.
 
 ```
 UserDetails/
+├── Dockerfile
+├── README.md
 ├── app.py
+├── docker-compose.yml
 ├── requirements.txt
 ├── static
 ├── templates
