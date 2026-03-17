@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 
@@ -32,4 +33,4 @@ def get_messages():
     return jsonify(messages_db)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=True, port=int(os.environ.get("PORT", 5000)))
